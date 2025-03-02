@@ -15,3 +15,6 @@ jenkins-blue
 	--volume jenkins-data:/var/jenkins_home \
 	--volume jenkins-docker-certs:/certs/client:ro \
 	myjenkins-blueocean:2.492.1-1 
+
+clean-jenkins-data:
+	docker volume rm jenkins-data
